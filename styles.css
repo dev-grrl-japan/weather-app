@@ -1,4 +1,43 @@
-h1 {
-  text-align: center;
-  color: rgb(154, 154, 224);
+h1,
+h2,
+h3,
+footer,
+form,
+div {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+div,
+form {
+  padding-top: 10px;
+}
+
+.current-weather-graphic {
+  color: red;
+  font-size: 120px;
+}
+
+.forecast1-weather-graphic,
+.forecast2-weather-graphic,
+.forecast3-weather-graphic,
+.forecast4-weather-graphic,
+.forecast5-weather-graphic {
+  font-size: 60px;
+}
+
+strong {
+  color: #4f7cfe;
+}
+.social-link {
+  color: #4f7cfe;
 }

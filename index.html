@@ -4,10 +4,114 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>SheCodes</title>
+    <title>Weather App by dev-grrl-japan</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/279edd8ebd.js" crossorigin="anonymous"></script>
   </head>
+
   <body>
-    <h1>This is my app</h1>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-6">Weather</div>
+        <div class="col-6" id="current-time"></div>
+      </div>
+
+      <form id="search-form">
+
+        <input 
+        type="text"
+        id="search-text-input"
+        placeholder="Enter a City Here"
+        autofocus="on";
+        />
+
+        <input type="button" value="🔎" />
+      </form>
+
+      <div class="row">
+            <div class="col-3">
+              <i class="fas fa-sun current-weather-graphic"></i>
+            </div>
+
+            <div class="col-4">
+              <h1 class="current-city" id="#currentCity">Tokyo</h1>
+              <h2 class="current-temperature" id="temperature">19
+                <span class="units">
+                  <a href="#" id="celcius-link" style="text-decoration: none;">℃</a> | 
+                  <a href="#" id="fahrenheit-link" style="text-decoration: none;">℉</a>
+                </span>
+              </h2>
+              <h3 class="current-weather-condition">sunny</h3>
+            </div>
+        </div>
+
+      <div class="row">
+        <div class="col-2">
+          MON
+          <div class="row">
+            <i
+              alt="5-Day Forecast Day 1 Weather Graphic"
+              class="fas fa-cloud-rain forecast1-weather-graphic"
+            ></i>
+          </div>
+        </div>
+
+        <div class="col-2">
+          TUES
+          <div class="row">
+            <i
+              alt="5-Day Forecast Day 2 Weather Graphic"
+              class="fas fa-sun forecast2-weather-graphic"
+            ></i>
+          </div>
+        </div>
+
+        <div class="col-2">
+          WED
+          <div class="row">
+            <i
+              alt="5-Day Forecast Day 3 Weather Graphic"
+              class="fas fa-cloud forecast3-weather-graphic"
+            /></i>
+          </div>
+        </div>
+
+        <div class="col-2">
+          THU
+          <div class="row">
+            <i
+              alt="5-Day Forecast Day 4 Weather Graphic"
+              class="fas fa-snowflake forecast4-weather-graphic"
+            ></i>
+          </div>
+        </div>
+
+        <div class="col-2">
+          FRI
+          <div class="row">
+            <i
+              alt="5-Day Forecast Day 5 Weather Graphic"
+              class="fas fa-cloud forecast5-weather-graphic"
+            ></i>
+          </div>
+        </div>
+    
+
+        <footer>
+            <div class="row">
+                <div class="col-6">Coded by <strong>dev-grrl-japan</strong>.</div>
+                <div class="col-6"><a href="https://linktr.ee/dev_grrl_japan"><i class="social-link fas fa-user-plus"></i></a></i>
+            </div>
+            </div>
+        </footer>
+    </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
